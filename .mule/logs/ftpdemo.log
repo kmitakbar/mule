@@ -1,0 +1,506 @@
+2020-02-19 09:37:10,077 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'ftpdemo'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-02-19 09:37:10,724 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-02-19 09:37:10,741 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-02-19 09:37:10,960 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-02-19 09:37:11,217 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-02-19 09:37:11,217 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-02-19 09:37:11,656 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@2c715e84: startup date [Wed Feb 19 09:37:11 IST 2020]; root of context hierarchy
+2020-02-19 09:37:14,994 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-02-19 09:37:16,486 [main] WARN  org.springframework.beans.GenericTypeAwarePropertyDescriptor - Invalid JavaBean property 'port' being accessed! Ambiguous write methods found next to actually used [public void org.mule.endpoint.URIBuilder.setPort(java.lang.String)]: [public void org.mule.endpoint.URIBuilder.setPort(int)]
+2020-02-19 09:37:17,455 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-02-19 09:37:17,880 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\ftpdemo\queue-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\ftpdemo\queue-tx-log\tx2.log
+2020-02-19 09:37:17,971 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\ftpdemo\queue-xa-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\ftpdemo\queue-xa-tx-log\tx2.log
+2020-02-19 09:37:17,991 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2020-02-19 09:37:18,130 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.ftp.mule.default
+2020-02-19 09:37:18,374 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-02-19 09:37:18,381 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ftpdemoFlow
+2020-02-19 09:37:18,383 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@29ebbdf4
+2020-02-19 09:37:18,422 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ftpdemoFlow.stage1
+2020-02-19 09:37:19,449 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\ftpdemo\ftpdemo.xml'}]"
+2020-02-19 09:37:19,450 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\ftpdemo\ftpdemo.xml'}]"
+2020-02-19 09:37:19,453 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-02-19 09:37:19,455 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'ftpdemo'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-02-19 09:37:19,483 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-02-19 09:37:19,483 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-02-19 09:37:19,501 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=280d4882
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-02-19 09:37:19,501 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=280d4882
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-02-19 09:37:19,502 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2020-02-19 09:37:19,504 [main] INFO  com.mulesoft.mule.transport.ftp.EEFtpConnector - Connected: EEFtpConnector
+{
+  name=connector.ftp.mule.default
+  lifecycle=initialise
+  this=51c8f62c
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[ftp]
+  serviceOverrides=<none>
+}
+
+2020-02-19 09:37:19,504 [main] INFO  com.mulesoft.mule.transport.ftp.EEFtpConnector - Starting: EEFtpConnector
+{
+  name=connector.ftp.mule.default
+  lifecycle=initialise
+  this=51c8f62c
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[ftp]
+  serviceOverrides=<none>
+}
+
+2020-02-19 09:37:19,504 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.ftp.mule.default
+2020-02-19 09:37:19,511 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-02-19 09:37:19,512 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ftpdemoFlow
+2020-02-19 09:37:19,513 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ftpdemoFlow.stage1
+2020-02-19 09:37:19,566 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: ftpdemoFlow on endpointUri: file://ftpin
+2020-02-19 09:37:19,621 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2020-02-19 09:37:19,626 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2020-02-19 09:37:19,628 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2020-02-19 09:37:19,628 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2020-02-19 09:37:19,640 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-02-19 09:37:39,781 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.ftpdemo:type=Endpoint,service="ftpdemoFlow",connector=connector.file.mule.default,name="endpoint.file.ftpin"
+2020-02-19 09:37:39,781 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.ftpdemo:type=Endpoint,service="ftpdemoFlow",connector=connector.file.mule.default,name="endpoint.file.ftpin"
+2020-02-19 09:37:39,785 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.ftpdemo:type=Connector,name="connector.file.mule.default"
+2020-02-19 09:37:39,785 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.ftpdemo:type=Connector,name="connector.ftp.mule.default"
+2020-02-19 09:37:39,792 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: ftpdemo                                               *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-02-19 09:38:14,694 [[ftpdemo].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: F:\gitrepo\mule\ftpdemo\ftpin\sample.json
+2020-02-19 09:38:14,833 [[ftpdemo].connector.ftp.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.ftp.mule.default.dispatcher.116920551'. Object is: FtpMessageDispatcher
+2020-02-19 09:38:14,850 [[ftpdemo].connector.ftp.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.ftp.mule.default.dispatcher.116920551'. Object is: FtpMessageDispatcher
+2020-02-19 09:39:07,738 [[ftpdemo].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: F:\gitrepo\mule\ftpdemo\ftpin\tax.xlsx
+2020-02-19 09:52:15,223 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'ftpdemo'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-02-19 09:52:15,230 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: ftpdemoFlow
+2020-02-19 09:52:15,230 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file://ftpin
+2020-02-19 09:52:15,234 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2020-02-19 09:52:15,235 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2020-02-19 09:52:15,239 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: ftpdemoFlow.stage1
+2020-02-19 09:52:15,313 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-02-19 09:52:15,318 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2020-02-19 09:52:15,322 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.ftp.mule.default
+2020-02-19 09:52:25,327 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.ftp.mule.default.dispatcher.116920551'. Object is: FtpMessageDispatcher
+2020-02-19 09:52:27,006 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'connector.ftp.mule.default.dispatcher.116920551'. Object is: FtpMessageDispatcher
+2020-02-19 09:52:27,010 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-02-19 09:52:27,010 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-02-19 09:52:27,019 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'ftpdemo'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-02-19 09:52:27,020 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-02-19 09:52:27,022 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: ftpdemoFlow
+2020-02-19 09:52:27,022 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: ftpdemoFlow.stage1
+2020-02-19 09:52:27,026 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-02-19 09:52:27,036 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=280d4882
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-02-19 09:52:27,037 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2020-02-19 09:52:27,037 [Mule.app.deployer.monitor.1.thread.1] INFO  com.mulesoft.mule.transport.ftp.EEFtpConnector - Disconnected: EEFtpConnector
+{
+  name=connector.ftp.mule.default
+  lifecycle=stop
+  this=51c8f62c
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[ftp]
+  serviceOverrides=<none>
+}
+
+2020-02-19 09:52:27,038 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.ftp.mule.default
+2020-02-19 09:52:27,487 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@2c715e84: startup date [Wed Feb 19 09:37:11 IST 2020]; root of context hierarchy
+2020-02-19 09:52:27,537 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "ftpdemo" shut down normally on: 19/2/20 9:52 AM       *
+* Up for: 0 days, 0 hours, 15 mins, 8.59 sec                         *
+**********************************************************************
+2020-02-19 09:52:28,488 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'ftpdemo'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-02-19 09:52:28,507 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-02-19 09:52:28,516 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-02-19 09:52:28,526 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-02-19 09:52:28,572 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-02-19 09:52:28,573 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-02-19 09:52:28,598 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@23306a3b: startup date [Wed Feb 19 09:52:28 IST 2020]; root of context hierarchy
+2020-02-19 09:52:29,494 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-02-19 09:52:29,744 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.config.spring.MuleArtifactContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ftpdemoFlow': Cannot create inner bean '(inner bean)#194e557e' of type [org.mule.config.spring.factories.OutboundEndpointFactoryBean] while setting bean property 'messageProcessors' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#194e557e': Cannot create inner bean '(inner bean)#e6f407a' of type [org.mule.endpoint.URIBuilder] while setting bean property 'URIBuilder'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#e6f407a': Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'path' threw exception; nested exception is java.lang.IllegalArgumentException: Unusual syntax in path: 'ftp://ftp.dlptest.com/testfolder' contains ://
+2020-02-19 09:52:29,769 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-02-19 09:52:29,773 [Mule.app.deployer.monitor.1.thread.1] ERROR org.mule.config.spring.SpringRegistry - Failed to shut down registry cleanly: org.mule.Registry.Spring
+org.mule.api.lifecycle.LifecycleException: Failed to lookup beans of type interface org.mule.api.construct.FlowConstruct from the Spring registry
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:164) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.lifecycle.RegistryLifecycleManager.fireLifecycle(RegistryLifecycleManager.java:134) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.registry.AbstractRegistry.dispose(AbstractRegistry.java:68) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.registry.AbstractRegistryBroker$2.onTransition(AbstractRegistryBroker.java:69) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.registry.AbstractRegistryBroker$2.onTransition(AbstractRegistryBroker.java:64) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.lifecycle.RegistryBrokerLifecycleManager.fireDisposePhase(RegistryBrokerLifecycleManager.java:82) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.registry.AbstractRegistryBroker.dispose(AbstractRegistryBroker.java:63) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.registry.MuleRegistryHelper.fireLifecycle(MuleRegistryHelper.java:137) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:74) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:70) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.lifecycle.MuleContextLifecycleManager.fireLifecycle(MuleContextLifecycleManager.java:62) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.DefaultMuleContext.dispose(DefaultMuleContext.java:452) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.context.DefaultMuleContextFactory.doCreateMuleContext(DefaultMuleContextFactory.java:230) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:81) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.application.DefaultMuleApplication.init(DefaultMuleApplication.java:210) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$2.execute(ArtifactWrapper.java:64) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:137) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.init(ArtifactWrapper.java:59) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:72) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:493) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:429) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedArtifacts(DeploymentDirectoryWatcher.java:567) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedApplications(DeploymentDirectoryWatcher.java:544) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:356) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_222]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) ~[?:1.8.0_222]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) ~[?:1.8.0_222]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) ~[?:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_222]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_222]
+Caused by: org.mule.api.MuleRuntimeException: Failed to lookup beans of type interface org.mule.api.construct.FlowConstruct from the Spring registry
+	at org.mule.config.spring.SpringRegistry.internalLookupByTypeWithoutAncestors(SpringRegistry.java:354) ~[mule-module-spring-config-3.9.2.jar:3.9.2]
+	at org.mule.config.spring.SpringRegistry.lookupEntriesForLifecycle(SpringRegistry.java:368) ~[mule-module-spring-config-3.9.2.jar:3.9.2]
+	at org.mule.config.spring.SpringRegistry.lookupObjectsForLifecycle(SpringRegistry.java:241) ~[mule-module-spring-config-3.9.2.jar:3.9.2]
+	at org.mule.lifecycle.RegistryLifecycleCallback.lookupObjectsForLifecycle(RegistryLifecycleCallback.java:155) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.lifecycle.RegistryLifecycleCallback.onTransition(RegistryLifecycleCallback.java:77) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.2.jar:3.9.2]
+	... 32 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ftpdemoFlow': Cannot resolve reference to bean '_muleContext' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named '_muleContext' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:786) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:123) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1137) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1028) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:515) ~[mule-module-spring-config-3.9.2.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1067) ~[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.mule.config.spring.SpringRegistry.internalLookupByTypeWithoutAncestors(SpringRegistry.java:348) ~[mule-module-spring-config-3.9.2.jar:3.9.2]
+	at org.mule.config.spring.SpringRegistry.lookupEntriesForLifecycle(SpringRegistry.java:368) ~[mule-module-spring-config-3.9.2.jar:3.9.2]
+	at org.mule.config.spring.SpringRegistry.lookupObjectsForLifecycle(SpringRegistry.java:241) ~[mule-module-spring-config-3.9.2.jar:3.9.2]
+	at org.mule.lifecycle.RegistryLifecycleCallback.lookupObjectsForLifecycle(RegistryLifecycleCallback.java:155) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.lifecycle.RegistryLifecycleCallback.onTransition(RegistryLifecycleCallback.java:77) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.2.jar:3.9.2]
+	... 32 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named '_muleContext' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:683) ~[mule-module-spring-config-3.9.2.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1168) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:281) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:786) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:123) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1137) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1028) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:515) ~[mule-module-spring-config-3.9.2.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1067) ~[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.mule.config.spring.SpringRegistry.internalLookupByTypeWithoutAncestors(SpringRegistry.java:348) ~[mule-module-spring-config-3.9.2.jar:3.9.2]
+	at org.mule.config.spring.SpringRegistry.lookupEntriesForLifecycle(SpringRegistry.java:368) ~[mule-module-spring-config-3.9.2.jar:3.9.2]
+	at org.mule.config.spring.SpringRegistry.lookupObjectsForLifecycle(SpringRegistry.java:241) ~[mule-module-spring-config-3.9.2.jar:3.9.2]
+	at org.mule.lifecycle.RegistryLifecycleCallback.lookupObjectsForLifecycle(RegistryLifecycleCallback.java:155) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.lifecycle.RegistryLifecycleCallback.onTransition(RegistryLifecycleCallback.java:77) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.2.jar:3.9.2]
+	... 32 more
+2020-02-19 09:52:29,776 [Mule.app.deployer.monitor.1.thread.1] ERROR org.mule.module.launcher.application.DefaultMuleApplication - null
+org.springframework.beans.PropertyBatchUpdateException: Failed properties: Property 'path' threw exception; nested exception is java.lang.IllegalArgumentException: Unusual syntax in path: 'ftp://ftp.dlptest.com/testfolder' contains ://
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:121) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1508) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1220) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:129) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1475) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1220) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:129) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList(BeanDefinitionValueResolver.java:382) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:157) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1475) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1220) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:753) ~[mule-module-spring-config-3.9.2.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:762) ~[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480) ~[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.mule.config.spring.SpringRegistry.doInitialise(SpringRegistry.java:108) ~[mule-module-spring-config-3.9.2.jar:3.9.2]
+	at org.mule.registry.AbstractRegistry.initialise(AbstractRegistry.java:104) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.createSpringRegistry(SpringXmlConfigurationBuilder.java:177) ~[mule-module-spring-config-3.9.2.jar:3.9.2]
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.doConfigure(SpringXmlConfigurationBuilder.java:100) ~[mule-module-spring-config-3.9.2.jar:3.9.2]
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.config.builders.AutoConfigurationBuilder.autoConfigure(AutoConfigurationBuilder.java:102) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.config.builders.AutoConfigurationBuilder.doConfigure(AutoConfigurationBuilder.java:54) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.context.DefaultMuleContextFactory$1.configure(DefaultMuleContextFactory.java:89) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.context.DefaultMuleContextFactory.doCreateMuleContext(DefaultMuleContextFactory.java:222) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:81) ~[mule-core-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.application.DefaultMuleApplication.init(DefaultMuleApplication.java:210) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$2.execute(ArtifactWrapper.java:64) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:137) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.init(ArtifactWrapper.java:59) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:72) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:493) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:429) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedArtifacts(DeploymentDirectoryWatcher.java:567) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedApplications(DeploymentDirectoryWatcher.java:544) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:356) ~[mule-module-launcher-3.9.2.jar:3.9.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_222]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) ~[?:1.8.0_222]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) ~[?:1.8.0_222]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) ~[?:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_222]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_222]
+2020-02-19 09:52:29,822 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - App 'ftpdemo' never started, nothing to dispose of
+2020-02-19 09:53:00,091 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'ftpdemo'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-02-19 09:53:00,120 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-02-19 09:53:00,124 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-02-19 09:53:00,131 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-02-19 09:53:00,170 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-02-19 09:53:00,170 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-02-19 09:53:00,174 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@1daa4c3d: startup date [Wed Feb 19 09:53:00 IST 2020]; root of context hierarchy
+2020-02-19 09:53:00,989 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-02-19 09:53:01,597 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\ftpdemo\queue-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\ftpdemo\queue-tx-log\tx2.log
+2020-02-19 09:53:01,600 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\ftpdemo\queue-xa-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\ftpdemo\queue-xa-tx-log\tx2.log
+2020-02-19 09:53:01,609 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2020-02-19 09:53:01,651 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.ftp.mule.default
+2020-02-19 09:53:01,756 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-02-19 09:53:01,862 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ftpdemoFlow
+2020-02-19 09:53:01,869 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5313b28a
+2020-02-19 09:53:01,931 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ftpdemoFlow.stage1
+2020-02-19 09:53:02,012 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\ftpdemo\ftpdemo.xml'}]"
+2020-02-19 09:53:02,019 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\ftpdemo\ftpdemo.xml'}]"
+2020-02-19 09:53:02,020 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'ftpdemo'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-02-19 09:53:02,027 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-02-19 09:53:02,036 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-02-19 09:53:02,046 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=556b51b5
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-02-19 09:53:02,048 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=556b51b5
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-02-19 09:53:02,052 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2020-02-19 09:53:02,055 [Mule.app.deployer.monitor.1.thread.1] INFO  com.mulesoft.mule.transport.ftp.EEFtpConnector - Connected: EEFtpConnector
+{
+  name=connector.ftp.mule.default
+  lifecycle=initialise
+  this=5c3a4894
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[ftp]
+  serviceOverrides=<none>
+}
+
+2020-02-19 09:53:02,056 [Mule.app.deployer.monitor.1.thread.1] INFO  com.mulesoft.mule.transport.ftp.EEFtpConnector - Starting: EEFtpConnector
+{
+  name=connector.ftp.mule.default
+  lifecycle=initialise
+  this=5c3a4894
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[ftp]
+  serviceOverrides=<none>
+}
+
+2020-02-19 09:53:02,057 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.ftp.mule.default
+2020-02-19 09:53:02,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-02-19 09:53:02,063 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ftpdemoFlow
+2020-02-19 09:53:02,063 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ftpdemoFlow.stage1
+2020-02-19 09:53:02,088 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Registering listener: ftpdemoFlow on endpointUri: file://ftpin
+2020-02-19 09:53:02,092 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2020-02-19 09:53:02,102 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2020-02-19 09:53:02,103 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2020-02-19 09:53:02,104 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2020-02-19 09:53:02,107 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-02-19 09:53:02,124 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.ftpdemo:type=Endpoint,service="ftpdemoFlow",connector=connector.file.mule.default,name="endpoint.file.ftpin"
+2020-02-19 09:53:02,126 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.ftpdemo:type=Endpoint,service="ftpdemoFlow",connector=connector.file.mule.default,name="endpoint.file.ftpin"
+2020-02-19 09:53:02,127 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.ftpdemo:type=Connector,name="connector.file.mule.default"
+2020-02-19 09:53:02,130 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.ftpdemo:type=Connector,name="connector.ftp.mule.default"
+2020-02-19 09:53:02,133 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: ftpdemo                                               *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-02-19 09:53:45,143 [[ftpdemo].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: F:\gitrepo\mule\ftpdemo\ftpin\emp.json
+2020-02-19 09:53:45,159 [[ftpdemo].connector.ftp.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.ftp.mule.default.dispatcher.541264157'. Object is: FtpMessageDispatcher
+2020-02-19 09:53:45,166 [[ftpdemo].connector.ftp.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.ftp.mule.default.dispatcher.541264157'. Object is: FtpMessageDispatcher
+2020-02-19 09:53:47,953 [[ftpdemo].connector.ftp.mule.default.dispatcher.01] ERROR org.mule.retry.notifiers.ConnectNotifier - Failed to connect/reconnect: EEFtpConnector
+{
+  name=connector.ftp.mule.default
+  lifecycle=start
+  this=5c3a4894
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[ftp]
+  serviceOverrides=<none>
+}
+. Root Exception was: Failed to change working directory to /testfolder. Ftp error: 550. Type: class java.io.IOException
+2020-02-19 09:53:48,010 [[ftpdemo].connector.ftp.mule.default.dispatcher.01] ERROR org.mule.exception.DefaultMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Failed to change working directory to /testfolder. Ftp error: 550
+Payload               : org.mule.transport.file.ReceiverFileInputStream@17f8cee0
+Element               : /connector.ftp.mule.default @ app:null:null
+Element XML           : <ftp:outbound-endpoint host="ftp.dlptest.com" port="21" user="dlpuser@dlptest.com" password="<<credentials>>" passive="true" responseTimeout="10000" doc:name="FTP" path="testfolder"></ftp:outbound-endpoint>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.io.IOException: Failed to change working directory to /testfolder. Ftp error: 550
+	at org.mule.transport.ftp.FtpConnector.createFtpClient(FtpConnector.java:734)
+	at org.mule.transport.ftp.FtpConnector$1.doWork(FtpConnector.java:585)
+	at org.mule.retry.policies.AbstractPolicyTemplate.execute(AbstractPolicyTemplate.java:63)
+	at org.mule.transport.ftp.FtpConnector.getOutputStream(FtpConnector.java:604)
+	at org.mule.transport.ftp.FtpMessageDispatcher.doDispatch(FtpMessageDispatcher.java:43)
+	at org.mule.transport.AbstractMessageDispatcher.process(AbstractMessageDispatcher.java:109)
+	at org.mule.transport.AbstractConnector$DispatcherMessageProcessor.process(AbstractConnector.java:2735)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:48)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.processNextTimed(AsyncInterceptingMessageProcessor.java:131)
+	at org.mule.processor.AsyncInterceptingMessageProcessor$AsyncMessageProcessorWorker$1.process(AsyncInterceptingMessageProcessor.java:221)
+	at org.mule.processor.AsyncInterceptingMessageProcessor$AsyncMessageProcessorWorker$1.process(AsyncInterceptingMessageProcessor.java:214)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:30)
+	at org.mule.processor.AsyncInterceptingMessageProcessor$AsyncMessageProcessorWorker.doRun(AsyncInterceptingMessageProcessor.java:213)
+	at org.mule.work.AbstractMuleEventWork.run(AbstractMuleEventWork.java:53)
+	at org.mule.work.WorkerContext.run(WorkerContext.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+********************************************************************************
+
+2020-02-19 11:07:52,349 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'ftpdemo'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-02-19 11:07:52,352 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: ftpdemoFlow
+2020-02-19 11:07:52,353 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file://ftpin
+2020-02-19 11:07:52,353 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2020-02-19 11:07:52,353 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2020-02-19 11:07:52,354 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: ftpdemoFlow.stage1
+2020-02-19 11:07:52,481 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-02-19 11:07:52,486 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2020-02-19 11:07:52,488 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.ftp.mule.default
+2020-02-19 11:07:52,490 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.ftp.mule.default.dispatcher.541264157'. Object is: FtpMessageDispatcher
