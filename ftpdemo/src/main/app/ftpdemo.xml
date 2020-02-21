@@ -10,6 +10,6 @@ http://www.mulesoft.org/schema/mule/ee/ftp http://www.mulesoft.org/schema/mule/e
     <flow name="ftpdemoFlow">
         <file:inbound-endpoint path="ftpin" responseTimeout="10000" doc:name="File"/>
         <logger message="simple messages" level="INFO" doc:name="Logger"/>
-        <ftp:outbound-endpoint host="ftp.dlptest.com" port="21" user="dlpuser@dlptest.com" password="SzMf7rTE4pCrf9dV286GuNe4N" passive="true" responseTimeout="10000" doc:name="FTP" path="testfolder"/>
+        <ftp:outbound-endpoint host="ftp.dlptest.com" port="21" user="dlpuser@dlptest.com" password="SzMf7rTE4pCrf9dV286GuNe4N" passive="true" responseTimeout="10000" doc:name="FTP" />
     </flow>
 </mule>
