@@ -1,0 +1,41 @@
+2020-02-23 12:02:23,565 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'app1'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-02-23 12:02:23,603 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-02-23 12:02:23,608 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-02-23 12:02:23,636 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-02-23 12:02:23,773 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-02-23 12:02:23,773 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-02-23 12:02:23,786 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@436bd4df: startup date [Sun Feb 23 12:02:23 IST 2020]; parent: org.mule.config.spring.MuleDomainContext@51cd7ffc
+2020-02-23 12:02:24,274 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-02-23 12:02:25,654 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-02-23 12:02:25,903 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\app1\queue-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\app1\queue-tx-log\tx2.log
+2020-02-23 12:02:25,904 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\app1\queue-xa-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\app1\queue-xa-tx-log\tx2.log
+2020-02-23 12:02:26,045 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-02-23 12:02:26,050 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: app1Flow
+2020-02-23 12:02:26,052 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@68ea253b
+2020-02-23 12:02:26,110 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: app1Flow.stage1
+2020-02-23 12:02:26,271 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\app1\app1.xml'}]"
+2020-02-23 12:02:26,271 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\app1\app1.xml'}]"
+2020-02-23 12:02:26,280 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-02-23 12:02:26,281 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'app1'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-02-23 12:02:26,288 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-02-23 12:02:26,288 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-02-23 12:02:26,302 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-02-23 12:02:26,305 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: app1Flow
+2020-02-23 12:02:26,306 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: app1Flow.stage1
+2020-02-23 12:02:26,394 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: app1                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************

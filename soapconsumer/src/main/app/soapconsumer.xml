@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:ws="http://www.mulesoft.org/schema/mule/ws" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/current/mule-ws.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" basePath="consume" doc:name="HTTP Listener Configuration"/>
+    <ws:consumer-config name="Web_Service_Consumer" wsdlLocation="http://www.dneonline.com/calculator.asmx?WSDL" service="Calculator" port="CalculatorSoap" serviceAddress="http://www.dneonline.com/calculator.asmx" doc:name="Web Service Consumer"/>
+    <flow name="soapconsumerFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/sum" allowedMethods="GET" doc:name="HTTP"/>
+        <set-variable variableName="n1" value="#[message.inboundProperties.'http.query.params'.number1]" doc:name="number1"/>
+        <set-variable variableName="n2" value="#[message.inboundProperties.'http.query.params'.number2]" doc:name="number2"/>
+        <set-variable variableName="h" value="#[message.inboundProperties['action']]" doc:name="header"/>
+        <choice doc:name="Choice">
+            <when expression="#[flowVars.h=='sum']">
+                <dw:transform-message doc:name="sum">
+                    <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://tempuri.org/
+---
+{
+	ns0#Add: {
+		ns0#intA: flowVars.n1 as :number,
+		ns0#intB: flowVars.n2 as :number
+	}
+}]]></dw:set-payload>
+                </dw:transform-message>
+                <ws:consumer config-ref="Web_Service_Consumer" operation="Add" doc:name="Web Service Consumer"/>
+                <flow-ref name="subflowSub_Flow" doc:name="Flow Reference"/>
+            </when>
+            <when expression="#[flowVars.h=='sub']">
+                <dw:transform-message doc:name="sub">
+                    <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://tempuri.org/
+---
+{
+	ns0#Subtract: {
+		ns0#intA: flowVars.n1 as :number,
+		ns0#intB: flowVars.n2 as :number
+	}
+}]]></dw:set-payload>
+                </dw:transform-message>
+                <ws:consumer config-ref="Web_Service_Consumer" operation="Subtract" doc:name="Web Service Consumer"/>
+                <flow-ref name="subflowSub_Flow" doc:name="Flow Reference"/>
+            </when>
+        </choice>
+    </flow>
+</mule>
