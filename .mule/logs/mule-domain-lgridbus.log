@@ -1,23 +1,94 @@
-INFO  2020-02-23 12:01:57,551 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2020-02-25 09:42:36,578 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'lgridbus'                                    +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2020-02-23 12:01:57,552 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2020-02-25 09:42:36,579 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'lgridbus'                           +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2020-02-23 12:01:57,970 [main] org.mule.util.JdkVersionUtils: You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
-INFO  2020-02-23 12:01:57,983 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
-INFO  2020-02-23 12:01:58,208 [main] org.mule.config.spring.MuleDomainContext: Refreshing org.mule.config.spring.MuleDomainContext@51cd7ffc: startup date [Sun Feb 23 12:01:58 IST 2020]; root of context hierarchy
-INFO  2020-02-23 12:02:00,291 [main] org.mule.config.spring.processors.ContextExclusiveInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-INFO  2020-02-23 12:02:01,492 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\lgridbus\queue-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\lgridbus\queue-tx-log\tx2.log
-INFO  2020-02-23 12:02:01,515 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\lgridbus\queue-xa-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\lgridbus\queue-xa-tx-log\tx2.log
-INFO  2020-02-23 12:02:01,898 [main] org.mule.config.spring.SpringXmlDomainConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlDomainConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='mule-domain-config.xml'}]"
-INFO  2020-02-23 12:02:01,904 [main] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
-INFO  2020-02-23 12:02:01,904 [main] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
-INFO  2020-02-23 12:02:01,971 [main] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081/lgrid
-INFO  2020-02-23 12:02:01,987 [main] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
-INFO  2020-02-23 12:02:23,341 [main] org.mule.DefaultMuleContext: 
+INFO  2020-02-25 09:42:36,969 [main] org.mule.util.JdkVersionUtils: You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+INFO  2020-02-25 09:42:36,979 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2020-02-25 09:42:37,177 [main] org.mule.config.spring.MuleDomainContext: Refreshing org.mule.config.spring.MuleDomainContext@51cd7ffc: startup date [Tue Feb 25 09:42:37 IST 2020]; root of context hierarchy
+INFO  2020-02-25 09:42:39,074 [main] org.mule.config.spring.processors.ContextExclusiveInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO  2020-02-25 09:42:40,175 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\lgridbus\queue-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\lgridbus\queue-tx-log\tx2.log
+INFO  2020-02-25 09:42:40,200 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\lgridbus\queue-xa-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\lgridbus\queue-xa-tx-log\tx2.log
+INFO  2020-02-25 09:42:40,670 [main] org.mule.config.spring.SpringXmlDomainConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlDomainConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='mule-domain-config.xml'}]"
+INFO  2020-02-25 09:42:40,676 [main] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2020-02-25 09:42:40,676 [main] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2020-02-25 09:42:40,742 [main] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081/lgrid
+INFO  2020-02-25 09:42:40,759 [main] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2020-02-25 09:43:00,827 [main] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: lgridbus                                              *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2020-02-25 09:46:56,342 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.domain.DefaultMuleDomain: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping domain 'lgridbus'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2020-02-25 09:46:56,352 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8081/lgrid
+INFO  2020-02-25 09:46:56,355 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2020-02-25 09:46:56,356 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2020-02-25 09:46:56,362 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2020-02-25 09:46:56,383 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleDomainContext: Closing org.mule.config.spring.MuleDomainContext@51cd7ffc: startup date [Tue Feb 25 09:42:37 IST 2020]; root of context hierarchy
+INFO  2020-02-25 09:46:56,393 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "lgridbus" shut down normally on: 25/2/20 9:46 AM      *
+* Up for: 0 days, 0 hours, 4 mins, 15.715 sec                        *
+**********************************************************************
+INFO  2020-02-25 09:46:56,402 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.domain.DefaultMuleDomain: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ New domain 'lgridbus'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2020-02-25 09:46:56,403 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.MuleSharedDomainClassLoader: Using domain dir F:\gitrepo\mule\.mule\domains\lgridbus for domain lgridbus
+INFO  2020-02-25 09:46:56,441 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.domain.DefaultMuleDomain: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing domain 'lgridbus'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2020-02-25 09:46:56,450 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.JdkVersionUtils: You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+INFO  2020-02-25 09:46:56,453 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2020-02-25 09:46:56,460 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleDomainContext: Refreshing org.mule.config.spring.MuleDomainContext@15a9a308: startup date [Tue Feb 25 09:46:56 IST 2020]; root of context hierarchy
+INFO  2020-02-25 09:46:56,722 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.ContextExclusiveInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO  2020-02-25 09:46:56,808 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\lgridbus\queue-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\lgridbus\queue-tx-log\tx2.log
+INFO  2020-02-25 09:46:56,810 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\lgridbus\queue-xa-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\lgridbus\queue-xa-tx-log\tx2.log
+INFO  2020-02-25 09:46:56,829 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlDomainConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlDomainConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='mule-domain-config.xml'}]"
+INFO  2020-02-25 09:46:56,830 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2020-02-25 09:46:56,830 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2020-02-25 09:46:56,843 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081/lgrid
+INFO  2020-02-25 09:46:56,847 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2020-02-25 09:46:56,850 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: lgridbus                                              *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2020-02-25 10:25:00,479 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ New domain 'lgridbus'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2020-02-25 10:25:00,480 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing domain 'lgridbus'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2020-02-25 10:25:00,867 [main] org.mule.util.JdkVersionUtils: You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+INFO  2020-02-25 10:25:00,881 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2020-02-25 10:25:01,102 [main] org.mule.config.spring.MuleDomainContext: Refreshing org.mule.config.spring.MuleDomainContext@51cd7ffc: startup date [Tue Feb 25 10:25:01 IST 2020]; root of context hierarchy
+INFO  2020-02-25 10:25:03,177 [main] org.mule.config.spring.processors.ContextExclusiveInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO  2020-02-25 10:25:04,284 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\lgridbus\queue-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\lgridbus\queue-tx-log\tx2.log
+INFO  2020-02-25 10:25:04,312 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\lgridbus\queue-xa-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\lgridbus\queue-xa-tx-log\tx2.log
+INFO  2020-02-25 10:25:04,698 [main] org.mule.config.spring.SpringXmlDomainConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlDomainConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='mule-domain-config.xml'}]"
+INFO  2020-02-25 10:25:04,704 [main] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2020-02-25 10:25:04,706 [main] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2020-02-25 10:25:04,771 [main] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081/lgrid
+INFO  2020-02-25 10:25:04,787 [main] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2020-02-25 10:25:13,820 [main] org.mule.DefaultMuleContext: 
 **********************************************************************
 * Application: lgridbus                                              *
 * OS encoding: \, Mule encoding: UTF-8                               *

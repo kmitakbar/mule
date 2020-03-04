@@ -1,0 +1,78 @@
+2020-02-27 10:01:47,421 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'mavendemo'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-02-27 10:01:47,930 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-02-27 10:01:47,953 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-02-27 10:01:48,165 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-02-27 10:01:48,697 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-02-27 10:01:48,697 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-02-27 10:01:48,840 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@2c715e84: startup date [Thu Feb 27 10:01:48 IST 2020]; root of context hierarchy
+2020-02-27 10:01:51,434 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-02-27 10:01:53,132 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-02-27 10:01:53,534 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\mavendemo\queue-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\mavendemo\queue-tx-log\tx2.log
+2020-02-27 10:01:53,576 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\mavendemo\queue-xa-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\mavendemo\queue-xa-tx-log\tx2.log
+2020-02-27 10:01:53,808 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-02-27 10:01:54,810 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\mavendemo\mavendemo.xml'}]"
+2020-02-27 10:01:54,811 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\mavendemo\mavendemo.xml'}]"
+2020-02-27 10:01:54,813 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-02-27 10:01:54,815 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'mavendemo'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-02-27 10:01:54,830 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-02-27 10:01:54,830 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-02-27 10:01:54,860 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-02-27 10:01:54,945 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-02-27 10:02:04,001 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: mavendemo                                             *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-02-27 10:18:18,939 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'mavendemo'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-02-27 10:18:19,666 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-02-27 10:18:19,680 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-02-27 10:18:19,870 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-02-27 10:18:20,440 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-02-27 10:18:20,440 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-02-27 10:18:20,591 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@2c715e84: startup date [Thu Feb 27 10:18:20 IST 2020]; root of context hierarchy
+2020-02-27 10:18:23,702 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-02-27 10:18:25,630 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-02-27 10:18:26,404 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\mavendemo\queue-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\mavendemo\queue-tx-log\tx2.log
+2020-02-27 10:18:26,431 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\mavendemo\queue-xa-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\mavendemo\queue-xa-tx-log\tx2.log
+2020-02-27 10:18:26,670 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-02-27 10:18:26,682 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: mavendemoFlow
+2020-02-27 10:18:26,682 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5c7dfc05
+2020-02-27 10:18:26,736 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: mavendemoFlow.stage1
+2020-02-27 10:18:27,498 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\mavendemo\mavendemo.xml'}]"
+2020-02-27 10:18:27,498 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\mavendemo\mavendemo.xml'}]"
+2020-02-27 10:18:27,505 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-02-27 10:18:27,506 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'mavendemo'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-02-27 10:18:27,522 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-02-27 10:18:27,522 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-02-27 10:18:27,571 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/maven
+2020-02-27 10:18:27,580 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-02-27 10:18:27,583 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: mavendemoFlow
+2020-02-27 10:18:27,584 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: mavendemoFlow.stage1
+2020-02-27 10:18:27,653 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-02-27 10:18:36,695 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: mavendemo                                             *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************

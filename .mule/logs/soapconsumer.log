@@ -1368,3 +1368,47 @@ org.xml.sax.SAXParseException: cvc-complex-type.2.4.b: The content of element 'c
 2020-02-22 13:31:27,295 [[soapconsumer].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
 2020-02-22 13:31:28,799 [[soapconsumer].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.security.tls.TlsProperties - Loading configuration file: tls-default.conf
 2020-02-22 13:31:43,077 [[soapconsumer].HTTP_Listener_Configuration.worker.02] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2020-02-27 09:21:27,655 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'soapconsumer'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-02-27 09:21:28,385 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-02-27 09:21:28,409 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-02-27 09:21:28,675 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-02-27 09:21:29,398 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-02-27 09:21:29,399 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-02-27 09:21:29,555 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@22c86919: startup date [Thu Feb 27 09:21:29 IST 2020]; root of context hierarchy
+2020-02-27 09:21:34,712 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-02-27 09:21:36,950 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-02-27 09:21:37,784 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\soapconsumer\queue-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\soapconsumer\queue-tx-log\tx2.log
+2020-02-27 09:21:37,807 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\soapconsumer\queue-xa-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\soapconsumer\queue-xa-tx-log\tx2.log
+2020-02-27 09:21:38,060 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-02-27 09:21:38,074 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: soapconsumerFlow
+2020-02-27 09:21:38,075 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2539cd1c
+2020-02-27 09:21:38,120 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: soapconsumerFlow.stage1
+2020-02-27 09:21:41,524 [main] WARN  org.mule.module.cxf.CxfConfiguration - initializeStaticBusInstance=false is currently deprecated because of security implications. Use it at your own risk.
+2020-02-27 09:21:42,932 [main] WARN  org.mule.module.cxf.CxfConfiguration - initializeStaticBusInstance=false is currently deprecated because of security implications. Use it at your own risk.
+2020-02-27 09:21:42,948 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\soapconsumer\soapconsumer.xml'}, ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\soapconsumer\subflow.xml'}]"
+2020-02-27 09:21:42,951 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\soapconsumer\soapconsumer.xml'}, ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\soapconsumer\subflow.xml'}]"
+2020-02-27 09:21:42,994 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-02-27 09:21:43,004 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'soapconsumer'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-02-27 09:21:43,027 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-02-27 09:21:43,027 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-02-27 09:21:43,151 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/consume
+2020-02-27 09:21:43,160 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-02-27 09:21:43,450 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: soapconsumerFlow
+2020-02-27 09:21:43,454 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: soapconsumerFlow.stage1
+2020-02-27 09:21:43,639 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-02-27 09:22:03,754 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: soapconsumer                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************

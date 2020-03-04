@@ -1,8 +1,8 @@
-INFO  2020-02-24 09:36:16,014 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2020-03-04 09:31:09,143 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2020-02-24 09:36:16,015 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2020-03-04 09:31:09,148 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
