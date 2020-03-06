@@ -19,14 +19,7 @@ http://www.mulesoft.org/schema/mule/smtp http://www.mulesoft.org/schema/mule/smt
         <json:object-to-json-transformer doc:name="Object to JSON"/>
         <file:outbound-endpoint path="inbox" outputPattern="K:\#[server.nanoTime()].json" responseTimeout="10000" doc:name="File"/>
         <set-payload value="data written success!" doc:name="Set Payload"/>
+        <exception-strategy ref="globalChoice_Exception_Strategy" doc:name="Reference Exception Strategy"/>
         
     </flow>
-    <choice-exception-strategy name="globalChoice_Exception_Strategy">
-        <catch-exception-strategy when="#[exception.causedBy(java.sql.SQLException)]" doc:name="dberror">
-            <set-payload value="db error!" doc:name="Set Payload"/>
-        </catch-exception-strategy>
-        <catch-exception-strategy when="#[exception.causedBy(java.io.IOException)]" doc:name="file_error">
-            <set-payload value="file error!" doc:name="Set Payload"/>
-        </catch-exception-strategy>
-    </choice-exception-strategy>
 </mule>
