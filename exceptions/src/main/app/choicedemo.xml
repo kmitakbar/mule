@@ -19,7 +19,6 @@ http://www.mulesoft.org/schema/mule/smtp http://www.mulesoft.org/schema/mule/smt
         <json:object-to-json-transformer doc:name="Object to JSON"/>
         <file:outbound-endpoint path="inbox" outputPattern="K:\#[server.nanoTime()].json" responseTimeout="10000" doc:name="File"/>
         <set-payload value="data written success!" doc:name="Set Payload"/>
-        <exception-strategy ref="globalChoice_Exception_Strategy" doc:name="Reference Exception Strategy"/>
         
     </flow>
 </mule>

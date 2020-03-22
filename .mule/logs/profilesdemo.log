@@ -800,3 +800,52 @@ java.io.FileNotFoundException: class path resource [${env}.properties] cannot be
 *   JMX Agent                                                        *
 *   Wrapper Manager                                                  *
 **********************************************************************
+2020-03-22 08:19:47,915 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'profilesdemo'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-03-22 08:19:49,020 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-03-22 08:19:49,037 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-03-22 08:19:50,538 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-03-22 08:19:50,768 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-03-22 08:19:50,769 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-03-22 08:19:51,299 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5ae81e1: startup date [Sun Mar 22 08:19:51 IST 2020]; root of context hierarchy
+2020-03-22 08:19:55,134 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [sit.properties]
+2020-03-22 08:19:55,148 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [sit.properties]
+2020-03-22 08:19:55,201 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-22 08:19:59,206 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-03-22 08:20:00,051 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\profilesdemo\queue-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\profilesdemo\queue-tx-log\tx2.log
+2020-03-22 08:20:00,380 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\profilesdemo\queue-xa-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\profilesdemo\queue-xa-tx-log\tx2.log
+2020-03-22 08:20:00,637 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-03-22 08:20:00,652 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: profilesdemoFlow
+2020-03-22 08:20:00,652 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1727e03a
+2020-03-22 08:20:00,768 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: profilesdemoFlow.stage1
+2020-03-22 08:20:00,789 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: readdataFlow
+2020-03-22 08:20:00,789 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@c689973
+2020-03-22 08:20:00,801 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: readdataFlow.stage1
+2020-03-22 08:20:01,254 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\profilesdemo\profilesdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\profilesdemo\readdata.xml'}]"
+2020-03-22 08:20:01,254 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\profilesdemo\profilesdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\profilesdemo\readdata.xml'}]"
+2020-03-22 08:20:01,260 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-03-22 08:20:01,261 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'profilesdemo'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-03-22 08:20:01,287 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-03-22 08:20:01,287 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-03-22 08:20:01,367 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8888/profile
+2020-03-22 08:20:01,373 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-03-22 08:20:01,375 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: profilesdemoFlow
+2020-03-22 08:20:01,376 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: profilesdemoFlow.stage1
+2020-03-22 08:20:01,381 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: readdataFlow
+2020-03-22 08:20:01,382 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: readdataFlow.stage1
+2020-03-22 08:20:01,453 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-03-22 08:20:21,608 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: profilesdemo                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
