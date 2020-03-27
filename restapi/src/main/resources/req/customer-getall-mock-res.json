@@ -1,0 +1,10 @@
+[
+  {
+    "customerId": "string",
+    "email": "string",
+    "gender": "string",
+    "name": "string",
+    "phone": "string",
+    "state": "string"
+  }
+]

@@ -1,0 +1,169 @@
+2020-03-22 08:51:17,115 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'jmssub'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-03-22 08:51:17,122 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-03-22 08:51:17,129 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-03-22 08:51:17,139 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-03-22 08:51:17,170 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-03-22 08:51:17,170 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-03-22 08:51:17,174 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5c931134: startup date [Sun Mar 22 08:51:17 IST 2020]; root of context hierarchy
+2020-03-22 08:51:17,699 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-22 08:51:18,026 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\jmssub\queue-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\jmssub\queue-tx-log\tx2.log
+2020-03-22 08:51:18,028 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\mule\.mule\.\.mule\jmssub\queue-xa-tx-log\tx1.log and F:\gitrepo\mule\.mule\.\.mule\jmssub\queue-xa-tx-log\tx2.log
+2020-03-22 08:51:18,032 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ
+2020-03-22 08:51:18,053 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2020-03-22 08:51:18,084 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-03-22 08:51:18,086 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: jmssubFlow
+2020-03-22 08:51:18,086 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4eb9ae4d
+2020-03-22 08:51:18,092 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: jmssubFlow.stage1
+2020-03-22 08:51:18,144 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\jmssub\jmssub.xml'}]"
+2020-03-22 08:51:18,145 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\mule\.mule\apps\jmssub\jmssub.xml'}]"
+2020-03-22 08:51:18,147 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'jmssub'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-03-22 08:51:18,170 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-03-22 08:51:18,173 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-03-22 08:51:18,849 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=4863c8ac
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2020-03-22 08:51:18,849 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=4863c8ac
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2020-03-22 08:51:18,849 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ
+2020-03-22 08:51:18,849 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=18a98913
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-03-22 08:51:18,849 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=18a98913
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-03-22 08:51:18,850 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2020-03-22 08:51:18,856 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-03-22 08:51:18,858 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: jmssubFlow
+2020-03-22 08:51:18,858 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: jmssubFlow.stage1
+2020-03-22 08:51:18,890 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: jmssubFlow on endpointUri: jms://pub1
+2020-03-22 08:51:18,942 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2020-03-22 08:51:18,949 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2020-03-22 08:51:18,956 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2020-03-22 08:51:18,959 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2020-03-22 08:51:19,174 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://pub1 has been successfully reconnected.
+2020-03-22 08:51:19,176 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2020-03-22 08:51:19,178 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2020-03-22 08:51:19,186 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-03-22 08:51:19,209 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.jmssub:type=Endpoint,service="jmssubFlow",connector=Active_MQ,name="endpoint.jms.pub1"
+2020-03-22 08:51:19,211 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.jmssub:type=Endpoint,service="jmssubFlow",connector=Active_MQ,name="endpoint.jms.pub1"
+2020-03-22 08:51:19,212 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.jmssub:type=Connector,name="connector.file.mule.default"
+2020-03-22 08:51:19,212 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.jmssub:type=Connector,name="Active_MQ"
+2020-03-22 08:51:19,214 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: jmssub                                                *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-03-22 08:51:19,371 [[jmssub].jmssubFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - message  subscribed and copied into a file!
+2020-03-22 08:51:19,499 [[jmssub].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.2020893409'. Object is: FileMessageDispatcher
+2020-03-22 08:51:19,538 [[jmssub].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.2020893409'. Object is: FileMessageDispatcher
+2020-03-22 08:51:19,595 [[jmssub].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: F:\gitrepo\mule\jmssub\2116384169216344.txt
+2020-03-22 08:53:02,845 [[jmssub].jmssubFlow.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - message  subscribed and copied into a file!
+2020-03-22 08:53:03,940 [[jmssub].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: F:\gitrepo\mule\jmssub\2116487434793073.txt
+2020-03-22 09:18:57,377 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@54539] ERROR org.mule.exception.DefaultSystemExceptionStrategy - 
+********************************************************************************
+Message               : Connection reset (javax.jms.JMSException)
+JMS Code              : null
+Element               : /Active_MQ @ app:jmssub.xml:10 (Active MQ)
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50)
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634)
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59)
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268)
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240)
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232)
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)
+	at java.lang.Thread.run(Thread.java:748)
+
+********************************************************************************
+
+2020-03-22 09:18:57,377 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@54539] INFO  org.mule.exception.DefaultSystemExceptionStrategy - Exception caught is a ConnectException, attempting to reconnect...
+2020-03-22 09:18:57,378 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@54539] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: Active_MQ
+2020-03-22 09:18:57,409 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@54539] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2020-03-22 09:18:57,412 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@54539] WARN  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Failed to close jms message consumer: Cannot send, channel has already failed: tcp://127.0.0.1:61616
+2020-03-22 09:18:57,413 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@54539] WARN  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Failed to close jms session consumer: Cannot send, channel has already failed: tcp://127.0.0.1:61616
+2020-03-22 09:18:57,413 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@54539] WARN  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Failed to close jms message consumer: Cannot send, channel has already failed: tcp://127.0.0.1:61616
+2020-03-22 09:18:57,413 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@54539] WARN  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Failed to close jms session consumer: Cannot send, channel has already failed: tcp://127.0.0.1:61616
+2020-03-22 09:18:57,413 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@54539] WARN  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Failed to close jms message consumer: Cannot send, channel has already failed: tcp://127.0.0.1:61616
+2020-03-22 09:18:57,414 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@54539] WARN  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Failed to close jms session consumer: Cannot send, channel has already failed: tcp://127.0.0.1:61616
+2020-03-22 09:18:57,417 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@54539] WARN  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Failed to close jms message consumer: Cannot send, channel has already failed: tcp://127.0.0.1:61616
+2020-03-22 09:18:57,417 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@54539] WARN  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Failed to close jms session consumer: Cannot send, channel has already failed: tcp://127.0.0.1:61616
+2020-03-22 09:18:57,436 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@54539] WARN  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Exception closing JMS connection: Disposed due to prior exception
+2020-03-22 09:18:57,436 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@54539] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Disconnected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=stop
+  this=4863c8ac
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2020-03-22 09:18:58,458 [[jmssub].Mule.02] ERROR org.mule.retry.notifiers.ConnectNotifier - Failed to connect/reconnect: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=stop
+  this=4863c8ac
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=false
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+. Root Exception was: Connection refused: connect. Type: class java.net.ConnectException
+2020-03-22 09:18:58,458 [[jmssub].Mule.02] ERROR org.mule.exception.DefaultSystemExceptionStrategy - Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect

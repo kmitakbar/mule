@@ -1,0 +1,9 @@
+<customers>
+<customer>
+<cid>1000</cid>
+<email>test@gmail.com</email>
+<gender>male</gender>
+<name>test</name>
+</customer>
+
+</customers>
